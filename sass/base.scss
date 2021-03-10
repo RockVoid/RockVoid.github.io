@@ -1,0 +1,53 @@
+@import "_fonts";
+@import "_colors";
+@import "_header";
+@import "_mainContent";
+@import "_about";
+@import "_services";
+@import "_projects";
+@import "_footer";
+@import "_mq";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $standard-font;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $bg-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    border: none;
+    background: none;
+    font-size: 50px;
+    padding: 2px;
+    color: $standard-font-color;
+
+    &:hover {
+        cursor: pointer;
+        color: $hover;
+    }
+}
+
+@mixin align-center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

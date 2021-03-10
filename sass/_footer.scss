@@ -1,0 +1,11 @@
+.footer {
+    border-top: 1px solid $white;
+    background: $standard-font-color;
+    color: $white;
+    text-align: center;
+    padding: 1rem 0;
+
+    h3 {
+        font-size: $standard-font-size;
+    }
+}

@@ -1,0 +1,46 @@
+.section-services {
+    background-color: $header-bg;
+    color: $standard-font-color;
+    padding: 10px 20px;
+    font-size: $standard-font-size;
+    letter-spacing: 1px;
+    @include align-center();
+
+    img {
+        width: 100px;
+    }
+
+    &__services {
+        @include mqMin(800px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: $standard-font-size;
+
+            p {
+                padding: 10px 0;
+            }
+        }
+
+        &__service {
+            @include mqMin(800px) {
+                width: 30vw;
+            }
+
+            border: 1px solid $standard-font-color;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 2rem 0;
+
+            p {
+                font-size: $standard-paragraph;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.section-about {
+    background-color: $header-bg;
+    color: $standard-font-color;
+    padding: 10px 20px;
+    font-size: $standard-font-size;
+    letter-spacing: 1px;
+    @include align-center();
+
+    img {
+        width: 100px;
+    }
+
+    &__about-text {
+        padding: 10px 0;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            font-size: $standard-paragraph;
+        }
+
+        &__pro,
+        &__stacks,
+        &__people {
+            @include mqMin(800px) {
+                width: 60vw;
+                margin: 20px 0;
+            }
+
+            h3 {
+                padding: 5px 0;
+            }
+
+            .stacks-list {
+                text-align: center;
+            }
+        }
+    }
+}

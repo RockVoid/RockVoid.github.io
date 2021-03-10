@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roque Costa Dev</title>
+    <link rel="stylesheet" href="./styles/css/base.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar__brand">
+                <img src="./styles/images/icon.svg" alt="Roque">
+            </a>
+
+            <ul id="navbar__menu" class="navbar__menu push">
+                <button id="btn-close-menu" class="btn close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <li><a class="sectionPath" href="#section-home">Home</a></li>
+                <li><a class="sectionPath" href="#section-about">Sobre</a></li>
+                <li><a class="sectionPath" href="#section-services">Serviços</a></li>
+                <li><a class="sectionPath" href="#section-works">Projetos</a></li>
+            </ul>
+
+            <button id="btn-open-menu" class="btn navbar__btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div id="section-home" class="present">
+            <h1>Roque Costa Dev</h1>
+
+            <ul class="present__social-media">
+                <li>
+                    <a href="https://www.linkedin.com/in/roque-souza-costa-6aa8171ba/" target="_blank"
+                        title="My linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_roquectx/" target="_blank" title="See my insta">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RockVoid" target="_blank" title="My code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section id="section-about" class="section-about">
+            <h2>
+                Sobre
+                <p><img src="./styles/images/icon3.svg" alt=""></p>
+            </h2>
+            <div class="section-about__about-text">
+                <div class="section-about__about-text__pro">
+                    <h3>Como profissonal</h3>
+                    <p>
+                        Busca manter o código limpo e bem organizado,
+                        seguindo os príncipios básicos do S.O.L.I.D/
+                        Clean Code. Aprende novas techs quando necessário
+                        para aplicar em alguns de seus projetos pessoais.
+                        Sabe que tem muito a aprender no mundo web e está
+                        disposto a isso.
+                    </p>
+                </div>
+
+                <div class="section-about__about-text__stacks">
+                    <h3>Stacks</h3>
+                    <p class="stacks-list">
+                        <img src="./styles/images/vue.svg" alt="Vue JS">
+                        <img src="./styles/images/react.svg" alt="aguia">
+                        <img src="./styles/images/js.svg" alt="aguia">
+                        <img src="./styles/images/sass.svg" alt="aguia">
+                        <img src="./styles/images/git.svg" alt="aguia">
+                        <img src="./styles/images/bs.svg" alt="aguia">
+                    </p>
+                </div>
+
+                <div class="section-about__about-text__people">
+                    <h3>Como pessoa</h3>
+                    <p>
+                        Muito calmo, educado e, principalmente, esforçado para cumprir os objetivos da maneira certa.
+                        Pratica esportes com frequência e adora ler clássicos. Evita intrigas pessoais e profissionais,
+                        mantendo o equilíbrio entre ambos, sem levar assuntos de um para o outro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-services" class="section-services">
+            <h2>Serviços</h2>
+            <small><img src="./styles/images/icon3.svg" alt="Eagle rock"></small>
+            <div class="section-services__services">
+                <div class="section-services__services__service">
+                    <h3>
+                        Prototipações
+                        <p><i class="fab fa-figma"></i></p>
+                    </h3>
+                    <p>
+                        Através do Figma, Font Awesome e Flat UI
+                        colors , é possível tirar o site da sua imaginação
+                        e por na tela de diferentes devices.
+                    </p>
+                </div>
+                <div class="section-services__services__service">
+                    <h3>
+                        Manutenção de sistemas
+                        <p><i class="fas fa-tools"></i></p>
+                    </h3>
+                    <p>
+                        Seja em Javascript, Bootstrap, React ou Vue Js. Seu site, SPA
+                        ou Portfólio sempre pode melhorar. Conte comigo para isso!
+                    </p>
+                </div>
+                <div class="section-services__services__service">
+                    <h3>
+                        Sugestões & mentorias
+                        <p><i class="far fa-handshake"></i></p>
+                    </h3>
+                    <p>
+                        Viu algo em meu site que eu possa melhorar ou
+                        quer saber como reproduzir? Entre em contato pelas
+                        redes socias e compartilhe conhecimento!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="section-works" class="section-works">
+            <h2>Projetos
+                <p><img src="./styles/images/icon2.svg" alt=""></p>
+            </h2>
+            <div id="projects" class="section-works__projects"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>&copy; Roque Costa Dev</h3>
+        <small>All rights reserved 2020-2021</small>
+    </footer>
+</body>
+
+</html>

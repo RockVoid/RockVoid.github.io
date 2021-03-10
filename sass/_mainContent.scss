@@ -1,0 +1,55 @@
+.main-content {
+    margin-top: 58px;
+}
+
+.present {
+    background: url("../images/bgMobile.jpg") no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    @include align-center();
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: $title-font;
+        color: $title-color;
+        animation: 1.5s changeColor infinite linear;
+
+        @include mqMin(720px) {
+            font-size: 5rem;
+        }
+    }
+
+    &__social-media {
+        display: inline-flex;
+        font-size: 30px;
+        li {
+            padding: 2px;
+            margin: 1rem;
+
+            a {
+                color: $header-bg;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: $title-color;
+    }
+    30% {
+        color: $title-color2;
+    }
+    60% {
+        color: $title-color3;
+    }
+    100% {
+        color: $title-color;
+    }
+}
