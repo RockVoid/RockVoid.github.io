@@ -11,6 +11,12 @@ const worksAPI = [
         image: '../styles/images/works/vueBasics.png',
         link: 'https://codepen.io/rockvoid/pen/gOLoLBX',
     },
+    {
+        name: 'Rock Movie Site',
+        resume: 'Site de filmes com React hooks, styled components & consumindo API com axios!',
+        image: '../styles/images/works/rockmoviesite.png',
+        link: 'https://rockvoid.github.io/react-movies-site/',
+    },
 ];
 
 const $projectsContainer = document.getElementById('projects');
