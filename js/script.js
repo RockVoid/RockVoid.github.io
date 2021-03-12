@@ -8,7 +8,7 @@ const worksAPI = [
     {
         name: 'Vue To do List',
         resume: 'Mini Projeto com Vue JS + Sass + Grid + Local Storage!',
-        image: '../styles/images/works/vueBasics.png',
+        image: '../styles/images/works/vuetodo.png',
         link: 'https://codepen.io/rockvoid/pen/gOLoLBX',
     },
     {
