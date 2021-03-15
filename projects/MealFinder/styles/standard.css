@@ -1,0 +1,241 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: rgba(255, 178, 0, 0.6);
+    font-family: 'Yusei Magic', sans-serif;
+    transition: 0.4s;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0;
+    background: #263440e6;
+}
+
+.header h1 a {
+    font-weight: bolder;
+    color: #f1f1f1;
+}
+
+.header .search-field input {
+    padding: 0.25rem 0.2rem;
+    border: 1px solid #FFB200;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.header .search-field input:focus {
+    transform: scale(1.05);
+}
+
+.btn {
+    padding: 0.25rem;
+    border: none;
+    border: 2px solid #FFB200;
+    border-radius: 8px;
+    background: #fffcd6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    background: #73b95f;
+}
+
+.nav-bar {
+    margin: 5px 0;
+}
+
+.nav-bar ul li {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-flex;
+    text-align: center;
+    padding: 0.25rem 0.15rem;
+    margin: 0.1rem 0;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.nav-bar ul li a {
+    color: black;
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+}
+
+.nav-bar ul li .fa-random {
+    line-height: 150%;
+}
+
+.nav-bar ul li:hover {
+    transform: scale(0.95);
+    background: black;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.modal {
+    background: #fff;
+    border: 1px solid #263440e6;
+    width: 80vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-in;
+}
+
+.modal .top {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background: #263440e6;
+}
+
+.modal p {
+    padding: 0.2rem;
+}
+
+.modal ul {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+} 
+
+.main-content {
+    text-align: center;
+    margin: 0.3rem 0;
+    padding: 0.25rem 0.15rem;
+    background: #ffffffcc;
+}
+
+.main-content h2, .side-content h2 {
+    padding: 0.25rem;
+}
+
+.section-img img{
+    width: 100%;
+    border: 2px solid #c1c1c1;
+}
+
+.main-content p, .side-content p {
+    padding: 0.5rem;
+}
+
+.side-content {
+    text-align: center;
+    background: #ffffffcc;
+    margin-top: 5px;
+}
+
+.footer {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    z-index: 1;
+    background: #263440e6;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0.2rem 1rem;
+    padding: 0.25rem;
+    border-radius: 10px;
+    background-color: #fffcd6;
+}
+
+.footer ul li a {
+    font-size: 25px;
+    color: black;
+    transition: 0.4s ease-in;
+}
+
+.footer ul li a:hover{
+    color: #FFB200;
+}
+
+.footer ul li a:focus {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .section-img img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        width: 60vw;
+        margin: 5px auto;
+        padding: 0.75rem 0.25rem;
+        border: 2px solid #c1c1c1;
+    }
+
+    .main-post {
+        border-bottom: 1px solid #c1c1c1;
+    }
+
+    .side-sections {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin: 5px auto;
+    }
+
+    .section-img img {
+        width: 60%;
+    }
+
+    .side-content {
+        border: 1px solid #c1c1c1;
+        cursor: pointer;
+        margin: 2px 0;
+        transition: 0.4s;
+    }
+
+    .side-content:hover {
+        transform: scale(0.95);
+    }
+}

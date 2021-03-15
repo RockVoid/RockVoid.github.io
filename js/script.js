@@ -1,21 +1,15 @@
 const worksAPI = [
     {
-        name: 'Alien Landing Page',
-        resume: 'Landing page totalmente responsiva com SASS e FlexBox!',
-        image: '../styles/images/works/sassProject.svg',
-        link: 'https://github.com/RockVoid/Sass',
-    },
-    {
-        name: 'Vue To do List',
-        resume: 'Mini Projeto com Vue JS + Sass + Grid + Local Storage!',
-        image: '../styles/images/works/vuetodo.png',
-        link: 'https://codepen.io/rockvoid/pen/gOLoLBX',
-    },
-    {
         name: 'Rock Movie Site',
         resume: 'Site de filmes com React hooks, styled components & consumindo API com axios!',
         image: '../styles/images/works/rockmoviesite.png',
         link: 'https://rockvoid.github.io/react-movies-site/',
+    },
+    {
+        name: 'Recipe App',
+        resume: 'Site de receitas com consultas na API + Javascript assícrono!',
+        image: '../styles/images/works/recipe.png',
+        link: '../projects/MealFinder/index.html',
     },
 ];
 

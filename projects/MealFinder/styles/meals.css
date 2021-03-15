@@ -1,0 +1,62 @@
+.meal-style, .meal-style-2 {
+    width: 80vw;
+    margin: 0.25rem auto;
+    text-align: center;
+    background: #ffffffb3;
+    border-radius: 10px;
+    border: 1px solid #ee4040;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.meal-style:hover, .meal-style-2:hover {
+    background: yellowgreen;
+    transform: scale(0.98);
+}
+
+.meal-style .meal-img-style, .meal-style-2 .meal-img-style {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.meal-style .meal-img-style img, .meal-style-2 .meal-img-style img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #ff3a3aab;
+}
+
+.meal-style p, .meal-style-2 p {
+    padding: 0.1rem 0.3rem;
+}
+
+.meal-style li, .meal-style-2 li {
+    text-align: start;
+    margin-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-meals {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .meal-style {
+        width: 30vw;
+    }
+
+    .meal-style-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .meal-style-2 .meal-top {
+        width: 40%;
+    }
+
+    .meal-style-2 .meal-tips {
+        width: 50%;
+        margin: auto 0;
+    }
+}

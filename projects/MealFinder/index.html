@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./styles/standard.css">
+        <link rel="stylesheet" href="./styles/meals.css">
+
+        <title>Roque's recipe App</title>
+        <script 
+            src="https://kit.fontawesome.com/a0f330339b.js" 
+            crossorigin="anonymous">
+        </script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+                <h1>
+                    <a href="./index.html">Recipe App</a>
+                </h1>
+                <div class="search-field">
+                    <input 
+                        id="search" 
+                        type="text"
+                        placeholder="Search a recipe..."
+                    >
+                    <button id="submit-search" class="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li id="call-meals">
+                            Meals
+                            <i class="fas fa-random"></i>
+                        </li>
+                        <li id="call-info">About us</li>
+                    </ul>
+                </div>
+        </header>
+
+        <div id="container-meals" class="container-meals"></div>
+        <div id="modal-about" class="modal hidden">
+            <span class="top">
+                <h2>
+                    About us 
+                    <i id="close-modal-btn" class="fas fa-times btn"></i>
+                </h2>
+            </span>
+            <p>
+                Hello, this is a website to show you simple meals 
+                to make in your extra time and improve your skills
+                as a Master Chief hahaha. Enjoy them!
+            </p>
+            <p>
+                This project is part of Roque Costa Portfólio, to 
+                traine my fluency and skills. Below you can see the 
+                resources  that I used! 
+
+                <ul>
+                    <li>
+                        Meals API - 
+                        <a 
+                            href="https://www.themealdb.com/api.php"
+                            alt="Meal DB API"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            API
+                        </a>
+                    </li>
+                    <li>
+                        Font Awesome - 
+                        <a 
+                            href="https://fontawesome.com"
+                            alt="Font Awesome"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            Icons
+                        </a>
+                    </li>
+                    <li>
+                        Google Fonts - 
+                        <a 
+                            href="https://fonts.google.com/"
+                            alt="Google Fonts"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            Font
+                        </a>
+                    </li>
+                </ul>
+            </p>
+            <p>Thanks for coming here!</p>
+        </div>
+        <div id="container-content" class="container-content">
+            <div class="main-content">
+                <section class="main-post">
+                    <h2>Welcome to Recipe App</h2>
+                    <div class="section-img">
+                        <img 
+                            class="img"
+                            src="./img/mini-img.jpg" 
+                            alt="cooking happy"
+                        >
+                    </div>
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+                </section>
+                <section class="main-post">
+                    <h2>Enjoy our recipes!</h2>
+                    <div class="section-img">
+                        <img 
+                            class="img"
+                            src="./img/randomMobileBG.jpg" 
+                            alt="cooking happy"
+                        >
+                    </div>
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+                </section>
+            </div>
+
+            <div class="side-sections">
+                <section class="side-content">
+                    <h2>You mean so much to us!</h2>
+                    <div class="section-img">
+                        <img 
+                            class="img"
+                            src="./img/mini-img2.jpg" 
+                            alt="cooking happy"
+                        >
+                    </div>
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+                </section>
+    
+                <section class="side-content">
+                    <h2>Ingredients, measures, tips and more!</h2>
+                    <div class="section-img">
+                        <img 
+                            class="img"
+                            src="./img/bgMobile.jpg" 
+                            alt="cooking happy"
+                        >
+                    </div>
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+                </section>
+
+                <section class="side-content">
+                    <h2>Ingredients, measures, tips and more!</h2>
+                    <div class="section-img">
+                        <img 
+                            class="img"
+                            src="./img/meal.jpg" 
+                            alt="cooking happy"
+                        >
+                    </div>
+                    <p>
+                        Here you can search for your recipes and enjoy them!
+                        We have a lot of meals to show you, cooking is an art,
+                        history and Happy!
+                    </p>
+                </section>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <h3>&copy; Roque Costa 2020-2021 </h3>
+            <ul>
+                <li>
+                    <a 
+                        href="https://github.com/RockVoid"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://www.linkedin.com/in/roque-souza-costa-6aa8171ba/"
+                        target="_blank"    
+                        rel="noopener noreferrer"
+                    >   
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://mail.google.com/"
+                        alt="devroque18@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
