@@ -11,6 +11,12 @@ const worksAPI = [
         image: '../styles/images/works/recipe.png',
         link: '../projects/MealFinder/index.html',
     },
+    {
+        name: 'Kanban Vue Js',
+        resume: 'Mapa de Kanban com Vuex, Vue Router e BootstrapVue, persistência de dados com Local Storage!',
+        image: '../styles/images/works/vueKanban.png',
+        link: 'https://github.com/RockVoid/Vue-Agile',
+    },
 ];
 
 const $projectsContainer = document.getElementById('projects');
@@ -21,7 +27,7 @@ const $menu = document.getElementById('navbar__menu');
 const $sectionPaths = document.querySelectorAll('.sectionPath');
 
 let navInitialPosit = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
     let navCurrentPos = window.pageYOffset;
 
     if (navInitialPosit > navCurrentPos) {
